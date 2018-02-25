@@ -1,0 +1,10 @@
+extends layout
+
+include mixins/_activityCard
+
+block content
+    .inner
+        h2= title
+        .stores
+            each activity in activities
+                +activityCard(activity)
